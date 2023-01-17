@@ -1,0 +1,53 @@
+{
+  "businessdirectory": [
+    {
+      "name": "Kellogg's",
+      "weburl": "https://www.kelloggs.com/",
+      "phone": "1.800.962.1413",
+      "address": "1 E. Michigan Avenue",
+      "image": "images/kelloggs.jpg"
+    },
+    {
+      "name": "Duncan Aviation",
+      "weburl": "https://www.duncanaviation.aero/",
+      "phone": "1.800.228.4277",
+      "address": "15745 South Airport Road",
+      "image": "images/duncanaviation.jpg"
+    },
+    {
+      "name": "FireKeepers Casino",
+      "weburl": "https://firekeeperscasino.com/",
+      "phone": "877.352.8777",
+      "address": "11177  E. Michigan Avenue",
+      "image": "images/firekeeperscasino.jpg"
+    },
+    {
+      "name": "Binder Park Zoo",
+      "weburl": "https://binderparkzoo.org/",
+      "phone": "269.979.1351",
+      "address": "7400 Division Drive",
+      "image": "images/binderparkzoo.jpg"
+    },
+    {
+      "name": "Schweitzer Construction",
+      "weburl": "https://schweitzerinc.com/",
+      "phone": "269.963.1579",
+      "address": "86 Division St S.",
+      "image": "images/schweitzerconstruction.jpg"
+    },
+    {
+      "name": "Graphic Packaging",
+      "weburl": "https://www.graphicpkg.com/",
+      "phone": "269.963.4004",
+      "address": "79 E. Fountain St E.",
+      "image": "images/graphicpackaging.jpg"
+    },
+    {
+      "name": "Besco Water Treatment, Inc.",
+      "weburl": "https://bescowater.com/",
+      "phone": "800.964.0257",
+      "address": "20400 Capital Avenue, N.E.",
+      "image": "images/besco.jpg"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="modules/global-scripts.js" defer></script>
+        <link rel="stylesheet" href="styles.css" />
+        <title>Home | Pokemon Team Builder</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__title">Pokemon Team Builder</h1>
+            <nav class="header__nav">
+                <div class="header__nav__menu">
+                    <button
+                        class="header__nav__menu--button"
+                        onclick="toggleMenu()"
+                    >
+                        &#9776;
+                    </button>
+                </div>
+                <ul class="header__nav__list">
+                    <li class="header__nav__list--item active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="header__nav__list--item">
+                        <a href="my-team.html">My Team</a>
+                    </li>
+                    <li class="header__nav__list--item">
+                        <a href="pokemon-search.html">Pokedex</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="home">
+            <section class="home__section-one">
+                <figure class="home__section-one__figure">
+                    <img
+                        class="home__section-one__figure--img"
+                        src="images/ash-and-pikachu.png"
+                        alt="Ash and Pikachu"
+                    />
+                </figure>
+                <div class="home__section-one__text">
+                    <h2 class="home__section-one__text--title">
+                        How can the Pokemon Team Builder app help?
+                    </h2>
+                    <p class="home__section-one__text--paragraph">
+                        This Pokemon app has been designed to help anyone
+                        desiring to become a PokeMaster. With the convenient
+                        team builder functionality, you can organize and build
+                        yourself the perfect team that you wish to use when
+                        playing any of the original pokemon games. This app
+                        includes the original 150 Pokemon and provides you with
+                        a PokeDex, which allows you to search the database of
+                        the original Pokemon and get details on their Pokemon
+                        ID, Health Power, Attack Power, Defense, and Element
+                        Types!
+                    </p>
+                </div>
+            </section>
+            <section class="home__section-two">
+                <figure class="home__section-two__figure">
+                    <img
+                        class="home__section-two__figure--img"
+                        src="images/charizard-breathing-fire.png"
+                        alt="Charizard breathing fire"
+                    />
+                </figure>
+                <div class="home__section-two__text">
+                    <h2 class="home__section-two__text--title">
+                        History of Pokemon Games
+                    </h2>
+                    <p class="home__section-two__text--paragraph">
+                        Pokemon was invented by two Japanese men, Satoshi Tajiri
+                        (developer) and Ken Sugimori (artist). The original
+                        versions of Pokemon (Red and Blue versions) were
+                        released in Japan in 1996, and they were called Pocket
+                        Monsters instead of Pokemon. The games were then
+                        released in the United States in 1998, under the name
+                        "Pokemon". Alongside the game releases, they also
+                        released the Pokemon card game, which took to the world
+                        by firestorm. Along with the video game and card game,
+                        they also created a television series following the
+                        protagonist of a young boy named Ash Ketchum.
+                    </p>
+                </div>
+            </section>
+
+            <div class="home__div-animation">
+                <img
+                    class="home__div-animation--person"
+                    src="images/ash-throwing-pokeball.png"
+                    alt="Ash Ketchum throwing a pokeball"
+                />
+                <img
+                    class="home__div-animation--pokeball"
+                    src="images/pokeball-2.png"
+                    alt="Pokeball flying towards the viewer"
+                />
+            </div>
+        </main>
+
+        <footer class="footer">
+            © Branden Torrance | WDD 330 | Fall 2022<br />
+        </footer>
+    </body>
+</html>

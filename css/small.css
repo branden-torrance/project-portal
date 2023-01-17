@@ -1,8 +1,11 @@
-/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+/* Import font styles */
+@import url("https://fonts.googleapis.com/css2?family=Blinker&family=Roboto&display=swap");
 
-/*----------- apply a natural box layout model to all elements --------------*/
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
 
 .content {
     max-width: 750px;
@@ -12,7 +15,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 header {
     background-color: #485665;
     margin: auto;
-    padding: .75em;
+    padding: 0.75em;
     text-align: center;
 }
 
@@ -27,7 +30,7 @@ footer {
     padding: 1px;
     color: white;
     font-family: Roboto, Helvetica, sans-serif;
-    font-size: .9rem;
+    font-size: 0.9rem;
 }
 
 ol {
@@ -36,7 +39,7 @@ ol {
     font-family: Roboto, Helvetica, sans-serif;
 }
 
-ol li a{
+ol li a {
     text-decoration: none;
 }
 
@@ -67,57 +70,6 @@ hr {
     margin-top: -10px;
 }
 
-footer a {
-    color: lightblue;
-}
-
-footer a:hover {
-    color: lightyellow;
-}
-
-ul a:hover {
+ol a:hover {
     color: #485665;
-}
-
-
-
-/*==================== Assignment Page ====================*/
-
-
-
-body.assignments-page {
-    margin: 2rem;
-}
-
-body.assignments-page h1 {
-    color: black;
-}
-
-body.assignments-page ul li a {
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-body.assignments-page ul {
-    max-width: 900px;
-}
-
-body.assignments-page ul li {
-    font-size: 1.1rem;
-}
-
-body.assignments-page h2 {
-    text-decoration: underline;
-    font-size: 1.5rem;
-    margin-top: 3rem;
-}
-
-body.assignments-page ul li code {
-    background-color: rgb(221, 221, 221);
-}
-
-
-/*==================== Notes Page ====================*/
-.hide-bullet {
-    list-style: none;
 }

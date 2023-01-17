@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Battle Creek Chamber of Commerce - Home Page">
+    <meta name="author" content="Branden Torrance">
+    <title>Battle Creek Chamber of Commerce | Business Connections in Battle Creek MI</title>
+
+<!--STYLESHEETS-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+<!--ICONS-->
+    <script defer src="https://kit.fontawesome.com/15b4785cfb.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+
+    <!--HEADER-->
+        <div id="bannerMessage" class="hideme">--Weather Alert--<br>
+            <button id="close" onclick="closeAlert()">&times;</button>
+            <span id="alert_name"></span> <br> 
+            <span id="alert_description"></span>
+        </div>
+        <div id="headerWrapper">
+            <header class="clearfix">
+                    <img src="images/chamber_logo.png" alt="Website logo">
+                <div class="headings">
+                    <h1>Battle Creek</h1>
+                    <h2>Chamber of Commerce</h2>
+                </div>
+            </header>
+        </div>  
+    
+    <!--NAVIGATION-->    
+        <div id="navWrapper">
+            <nav class="clearfix">
+                <div class="buttonText">
+                    <button onclick="toggleMenu()">&#9776;</button>
+                </div>
+                <ul id="primaryNav" class="hide">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="city.html">City</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+    <!--CONTENT-->
+        <main>
+            <h1 id="pageName">Home</h1>
+            <div class="hero_parent">
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/battlecreekhero500.jpg">
+                    <source media="(max-width: 800px)" srcset="images/battlecreekhero800.jpg">
+                    <img class="hero_img" src="images/battlecreekhero1120.jpg" alt="Hero image" sizes="100vw"
+                            srcset="images/battlecreekhero500.jpg 500w,
+                                    images/battlecreekhero800.jpg 800w,
+                                    images/battlecreekhero1120.jpg 1120w">
+                </picture>
+                <a href="join.html">
+                    <div class="hero_child">
+                        <p>Join the Chamber</p>
+                    </div>
+                </a>
+            </div>
+            <h2>Our Purpose</h2>
+            <div id="ourPurposeDiv">
+                <img src="images/glasscitybuilding.jpg" alt="Glass building" loading="lazy">
+                <p>The purpose of this chamber of commerce site is to provide a business network for local businesses and help them get 
+                    connected to the community - both the public and the business community. This chamber of commerce is an organization 
+                    of local citizens who are interested in developing and improving their local community. Our members have invested 
+                    their own time and money into this program to improve the civic, cultural, and economic wellbeing of our community. 
+                    The goal of this website is to act as a spokesman for the businesses and professionals within the community. We also 
+                    strive to put the thoughts and ideas of our members into real action.<br>
+                    Our mission is to create a setting in which our local businesses can prosper. We strive to promote the interests of 
+                    local businesses as well as goods and services that those businesses and professionals can provide. Ultimately, we 
+                    wish to help local businesses grow and expand and help fund new roads to improve our city’s infrastructure. This 
+                    improvement in infrastructure will help lead to easier access to the goods and services our local businesses can 
+                    provide. We believe that all individuals are capable of making this local business community a successful and 
+                    thriving geographical location. We welcome all those who are willing to lend service and seek the betterment of 
+                    both our public community, and it’s businesses within that community.
+                    
+                </p>
+                
+
+            </div>
+            <h2>City Information</h2>
+            <div id="cityInformationDiv">
+                <section id="companyHighlights">
+                    <h3>Company Hightlights</h3>
+                    <img src="images/kelloggslogo.jpg" alt="Kellogg's company logo" loading="lazy">
+                    <p>Kellogg Company has made its way to most of America’s breakfast table. They manufacture a variety of cereals 
+                        and convenience foods that can be enjoyed by just about everyone. The foods they manufacture include cereal, 
+                        cereal bars, wellness bars, cookies, toaster pastries, frozen waffles, fruit-flavored snacks, and veggie foods. 
+                        Kellogg’s has done a great job of keeping up with the demands of Americans and their ever-changing eating 
+                        habits, and they look to be in a good position to continue that pace for many more years to come.
+                    </p>
+                    <img src="images/duncanaviationlogo.jpg" alt="Duncan Aviation company logo" loading="lazy">
+                    <p>Duncan Aviation is a jet service provider who just so happens to be the largest privately owned jet service 
+                        business in the world. They perform everything on jet airplanes, from maintenance, to repairs and overhauls. 
+                        The company also takes part in aircraft acquisition, aircraft sales, and installations of every bit of gear 
+                        that an aircraft might need. They have 3 major facilities across the United States, located in Michigan, 
+                        Nebraska, and Utah. Duncan Aviation seeks constant innovation to improve upon the performance and quality that 
+                        jet aircraft can offer.
+                    </p>
+                    <img src="images/firekeeperslogo.jpg" alt="Firekeepers Casino Hotel company logo" loading="lazy">
+                    <p>Firekeepers Casino serves as one of the largest casinos in Michigan and regularly gets visitors from Indiana 
+                        and Ohio. They feature a multi-purpose Event Center which has been used for major performers such as Tony Bennett, 
+                        Reba McIntyre, and Tim Allen. Firekeepers features a luxurious hotel which has been named a Four Diamond Hotel 
+                        by AAA. Firekeepers has been very active in the local community, providing fund raisers and donating to shelters 
+                        for those affected by domestic violence. Firekeepers also provides food for the downtown schools in Battle Creek.
+                    </p>
+                </section>
+
+                <section id="upcomingEvents">
+                    <h3>Upcoming Events</h3>
+                    <p><u>Friday, July 9th</u><br>Ribbon Cutting with Handmap Brewing</p>
+                    <p><u>Tuesday, July 20th</u><br>Sharing Solutions Michigan</p>
+                    <p><u>Friday, July 30th</u><br>2021 Annual Golf Outing</p>
+                </section>
+
+                <section id="currentWeather">
+                    <h3>Current Weather</h3>
+                    <ul>
+                        <li>Sky: <label class="weather_summary">
+                            <span id="weatherDesc"></span></label></li>
+                        <li>Temperature: <label class="weather_summary">
+                            <span id="temperature"></span>&deg;F</label></li>
+                        <li>Humidity: <label class="weather_summary">
+                            <span id="humidity"></span>%</label></li>
+                        <li>Wind Speed: <label class="weather_summary">
+                            <span id="windspeed"></span> mph</label></li>
+                        <li>Windchill: <label class="weather_summary">
+                            <span id="chill"></span></label></li>
+                    </ul>
+                </section>
+
+                <section id="weatherForecast">
+                    <h3>3-Day Forecast</h3>
+                    <div id="forecastDiv">
+                        <div id="forecast1">
+                            <h4>
+                                <span id="forecastDay1">Placeholder</span>
+                            </h4>
+                            <img src="https://via.placeholder.com/75x75" alt="Placeholder" id="forecastImage1">
+                            <p>
+                                <span id="forecastTemp1"></span>
+                            </p>
+                        </div>
+                        <div id="forecast2">
+                            <h4>
+                                <span id="forecastDay2">Placeholder</span>
+                            </h4>
+                            <img src="https://via.placeholder.com/75x75" alt="Placeholder" id="forecastImage2">
+                            <p>
+                                <span id="forecastTemp2"></span>
+                            </p>
+                        </div>
+                        <div id="forecast3">
+                            <h4>
+                                <span id="forecastDay3">Placeholder</span>
+                            </h4>
+                            <img src="https://via.placeholder.com/75x75" alt="Placeholder" id="forecastImage3">
+                            <p>
+                                <span id="forecastTemp3"></span>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section id="homeContact">
+                    <h3>Connect With Us</h3>
+                    <p><label class="weather_summary">Phone:</label> 269.962.4076<br>
+                        <label class="weather_summary">Email:</label> BattleCreekCoC@gmail.com<br>
+                        <label class="weather_summary">Location:</label> 34 Jackson St W. Battle Creek, MI<br><br>
+                        <a href="https://www.twitter.com">
+                            <img src="images/twitter.jpg" alt="Twitter Logo">
+                        </a>
+                        <a href="https://www.facebook.com">
+                            <img src="images/facebook.jpg" alt="Facebook Logo">
+                        </a>
+                    </p>
+                </section>
+            </div>
+    
+        </main>
+    
+    <!--FOOTER-->
+        <div id="footerWrapper">
+            <footer>
+                &copy; <span id="year"></span> Branden Torrance
+                <div id="dateUpdated">Last Updated: <span id="currentDate"></span></div>
+            </footer>
+        </div>
+    
+    <!--SCRIPTS-->
+        <!--FONT-->
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>WebFont.load({google: {families: ["Cinzel", "Open+Sans"]}});</script>
+        
+        <script src="js/script.js"></script>
+
+    </body>
+    </html>

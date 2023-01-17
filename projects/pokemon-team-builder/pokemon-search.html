@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="modules/pokemon-search.js" defer></script>
+        <script src="modules/global-scripts.js" defer></script>
+        <link rel="stylesheet" href="styles.css" />
+        <title>Pokedex | Pokemon Team Builder</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__title">Pokemon Team Builder</h1>
+            <nav class="header__nav">
+                <div class="header__nav__menu">
+                    <button
+                        class="header__nav__menu--button"
+                        onclick="toggleMenu()"
+                    >
+                        &#9776;
+                    </button>
+                </div>
+                <ul class="header__nav__list">
+                    <li class="header__nav__list--item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="header__nav__list--item">
+                        <a href="my-team.html">My Team</a>
+                    </li>
+                    <li class="header__nav__list--item active">
+                        <a href="#">Pokedex</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="search">
+            <h2 class="search__title">Pokedex</h2>
+            <p class="search__paragraph">Find out Pokemon information here by searching for your favorite pokemon!</p>
+            <form class="search__form">
+                <div class="search__form--div">
+                    <input
+                        class="search__form--input"
+                        name="searchPokemon"
+                        type="text"
+                        placeholder="Pokemon name here"
+                        onkeyup="filterList()"
+                        onblur="closeList()"
+                        required
+                    />
+                    <div class="search__list" id="search-list">
+                        <ul class="search__list--ul">
+                        </ul>
+                    </div>
+                </div>
+                <input class="search__form--button" type="submit" value="Search">
+                </input>
+            </form>
+            <section class="search__section">
+                <div class="search__section__image">
+                </div>
+                <div class="search__section__details">
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            © Branden Torrance | WDD 330 | Fall 2022
+        </footer>
+    </body>
+</html>

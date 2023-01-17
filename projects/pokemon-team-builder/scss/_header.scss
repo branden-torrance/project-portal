@@ -1,0 +1,96 @@
+@use "variables" as *;
+@use "mixins";
+
+/* =========================== HEADER =========================== */
+
+// Toggle display of nav menu
+.hide {
+    display: none;
+}
+
+.active {
+    text-shadow: 1px 1px 2px $pokemon-darkblue;
+}
+
+.header {
+    background-image: url("images/pokeball-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px;
+    background-color: $background-color-body;
+
+    &__title {
+        font-family: $headlines-font;
+        font-size: $header-text-small;
+        text-align: center;
+        padding: 1rem 0;
+        letter-spacing: 4px;
+        line-height: 2.5rem;
+        color: $pokemon-yellow;
+        -webkit-text-stroke: 1px $pokemon-lightblue;
+        text-shadow: 0 0 50px white;
+    }
+    &__nav {
+        padding: 1rem;
+
+        &__menu {
+            text-align: center;
+
+            &--button {
+                background-color: $pokemon-lightblue;
+                color: $pokemon-yellow;
+                border: 1px solid $pokemon-yellow;
+                padding: 0.3rem 1rem;
+                font-size: $section-title-small;
+            }
+        }
+        &__list {
+            width: 200px;
+            font-size: $section-title-small;
+            background-color: $background-color-main;
+            border: 2px solid $pokemon-darkblue;
+            border-radius: 10px;
+            list-style-type: none;
+            text-align: center;
+            margin: 0 auto;
+
+            &--item {
+                padding: 0.5rem;
+
+                & a {
+                    text-decoration: none;
+                    color: $pokemon-darkblue;
+
+                    &:hover {
+                        text-shadow: 1px 1px 2px $pokemon-darkblue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ============================ Large Breakpoint ============================
+@include mixins.breakpoint(large) {
+    .header {
+        background-color: $background-color-body;
+        &__title {
+            padding: 4rem 0;
+            font-size: 3rem;
+            letter-spacing: 5px;
+            -webkit-text-stroke: 1.5px $pokemon-lightblue;
+        }
+        &__nav {
+            padding: 0;
+
+            &__menu {
+                display: none;
+            }
+            &__list {
+                display: flex;
+                width: 500px;
+                justify-content: space-around;
+            }
+        }
+    }
+}

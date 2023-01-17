@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Battle Creek Chamber of Commerce - Join Page">
+    <meta name="author" content="Branden Torrance">
+    <title>Thank You For Joining | Battle Creek Chamber of Commerce</title>
+
+<!--STYLESHEETS-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+<!--ICONS-->
+    <script defer src="https://kit.fontawesome.com/15b4785cfb.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+
+    <!--HEADER-->
+        <div id="headerWrapper">
+            <header class="clearfix">
+                    <img src="images/chamber_logo.png" alt="Website logo">
+                <div class="headings">
+                    <h1>Battle Creek</h1>
+                    <h2>Chamber of Commerce</h2>
+                </div>
+            </header>
+        </div>  
+    
+    <!--NAVIGATION-->    
+        <div id="navWrapper">
+            <nav class="clearfix">
+                <div class="buttonText">
+                    <button onclick="toggleMenu()">&#9776;</button>
+                </div>
+                <ul id="primaryNav" class="hide">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="city.html">City</a></li>
+                    <li class="active"><a href="join.html">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+    <!--CONTENT-->
+        <main>
+            <h1 id="pageName">Thanks</h1>
+            <h3 class="thank_you">Thank you!</h3>
+            <p class="thank_you">Your form has been submitted. We will soon be in contact via Email to send you your new member packet.<br>
+                Welcome to the Chamber!
+            </p>
+
+        </main>
+    
+    <!--FOOTER-->
+        <div id="footerWrapper">
+            <footer>
+                &copy; <span id="year"></span> Branden Torrance
+                <div id="dateUpdated">Last Updated: <span id="currentDate"></span></div>
+            </footer>
+        </div>
+    
+    <!--SCRIPTS-->
+        <!--FONT-->
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>WebFont.load({google: {families: ["Cinzel", "Open+Sans"]}});</script>
+        
+        <script src="js/script.js"></script>
+
+    </body>
+    </html>

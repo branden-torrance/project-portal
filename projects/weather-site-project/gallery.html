@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lesson W06 - Preston Town Page">
+    <meta name="author" content="Branden Torrance">
+    <title>Images of Weather in the Idaho Area | Weathering Weather</title>
+
+<!--STYLESHEETS-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+
+<!--HEADER-->
+    <div id="bannerMessage" class="">Preston Pancakes in the Park!<br>9:00 a.m. Saturday at the city park pavilion.
+    </div>
+    <div id="headerWrapper">
+        <header class="clearfix">
+            <picture>
+                <img src="images/weather_logo.png" alt="Website logo">
+            </picture>
+            <div class="headings">
+                <h1>Weathering Weather</h1>
+                <h2>Weathering the weather, whether the weather needs weathering or not!</h2>
+            </div>
+        </header>
+    </div>  
+
+<!--NAVIGATION-->    
+    <div id="navWrapper">
+        <nav class="clearfix">
+            <div class="buttonText">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <h3>Menu</h3>
+            </div>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li class="active"><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+<!--CONTENT-->
+    <main>
+        <h1 id="pageName">Weather Gallery</h1>
+        <div class="gallery_grid">
+
+            <figure>
+                <img src="https://via.placeholder.com/350x233.png" data-src="images/weather01.jpg" alt="Fog over trees">
+                <figcaption>Fog over the trees in Northern Preston</figcaption>
+            </figure>
+            <figure>
+                <img src="https://via.placeholder.com/350x233.png" data-src="images/weather02.jpg" alt="Clouds">
+                <figcaption>Cloudy day over Preston</figcaption>
+            </figure>
+            <figure>
+                <img src="https://via.placeholder.com/350x233.png" data-src="images/weather03.jpg" alt="Snowy field">
+                <figcaption>Snowy day over the fields</figcaption>
+            </figure>
+            <figure>
+                <img src="https://via.placeholder.com/350x233.png" data-src="images/weather04.jpg" alt="Lightning strike">
+                <figcaption>Lightning strike near the Preston airport</figcaption>
+            </figure>
+            <figure>
+                <img src="https://via.placeholder.com/350x233.png" data-src="images/weather05.jpg" alt="Snow covered trees">
+                <figcaption>Snow-covered trees in a nearby forest</figcaption>
+            </figure>
+            <figure>
+                <img src="https://via.placeholder.com/350x233.png" data-src="images/weather06.jpg" alt="Tornado">
+                <figcaption>Tornado touches down East of Preston</figcaption>
+            </figure>
+            <figure>
+                <img src="https://via.placeholder.com/350x233.png" data-src="images/weather07.jpg" alt="Man at the dock">
+                <figcaption>Man at the edge of the dock at Preston lake</figcaption>
+            </figure>
+            <figure>
+                <img src="https://via.placeholder.com/350x233.png" data-src="images/weather08.jpg" alt="Rainbow over field">
+                <figcaption>Double rainbow over a grassy field</figcaption>
+            </figure>
+            <figure>
+                <img src="https://via.placeholder.com/350x233.png" data-src="images/weather09.jpg" alt="Birds in the sky at sunset">
+                <figcaption>Birds flying high at sunset</figcaption>
+            </figure>
+        </div>
+    </main>
+
+<!--FOOTER-->
+    <div id="footerWrapper">
+        <footer>
+            <p>
+                &copy; Branden Torrance | <a href="https://spacescapist.github.io">Assignment Portal</a>
+            </p>
+            <p>Today: <span class="date"></span></p>
+            <p>Last Visited: <span id="lastVisit"></span></p>
+        </footer>
+    </div>
+
+<!--SCRIPTS-->
+    <!--FONT-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({google: {families: ["Josefin+Sans", "Open+Sans"]}});</script>
+    <!--DATE & LAZY LOAD-->
+    <script src="js/script.js"></script>
+</body>
+</html>

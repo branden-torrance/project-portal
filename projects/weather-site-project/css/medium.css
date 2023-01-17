@@ -1,0 +1,235 @@
+/* 38.75rem = 620px @ 16px base */
+@media only screen and (min-width: 38.75rem) {
+
+
+    /*----------- BODY --------------*/
+    
+    
+    /*----------- HEADER --------------*/
+        header img {
+            width: 100px;
+        }
+        header h1 {
+            font-size: 1.7rem;
+        }
+        header h2 {
+            font-size: 1rem; 
+        }
+    
+    
+    /*----------- NAVIGATION --------------*/
+        .buttonText {
+            display: none;
+        }
+        nav ul {
+            margin-left: 2%;
+        }
+        nav ul.hide {
+            display: block;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            border: none;
+            border-right: 1px solid rgba(255, 255, 255, 0.4);
+            padding: .9rem 1rem;
+        }
+    
+    /*----------- MAIN --------------*/
+    main h1 {
+        font-size: 2.2rem;
+        text-align: left;
+        margin: 2rem;
+    }
+    .forecast_heading {
+        display: block;
+        margin: 2rem 0 0 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    div#bannerMessage {
+        font-size: 1.1rem;
+    }
+    .hero_parent {
+        position: relative;
+    }
+    .hero_child {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding: .5rem 2rem;
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 2px solid black;
+        /* font-size: 1.1rem; */
+    }
+    .hero_child ul {
+        line-height: 1.5rem;
+    }
+    .hero_child h2 {
+        font-size: 1.3rem;
+    }
+    section.forecast {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        width: 90%;
+        margin: 0 auto 3rem auto;
+    }
+    section.forecast div {
+        text-align: center;
+        border: 1px solid #aaa;
+        background-color: lightgrey;
+        padding: 0;
+        box-shadow: 5px 5px 5px #333;
+        border-radius: 20%;
+        overflow: hidden;
+    }
+    section.forecast div h5 {
+        background-color: #AD343E;
+        color: white;
+        margin: 0;
+        padding: .5rem;
+        font-size: .9rem;
+    }
+    section.forecast div img {
+        width: 75px;
+        height: auto;
+    }
+    section.forecast div p {
+        font-size: 1rem;
+        margin: .7rem;
+    }
+    .main_article img {
+        padding: 0 1rem 1rem 1rem;
+        width: 50%;
+        min-width: 380px;
+        float: right;
+    }
+    main div.upcoming_events {
+        width: 55%;
+        font-size: 1rem;
+    }
+    .main_map {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1rem;
+    }
+    .main_map span {
+        padding: 0;
+        font-size: 1rem;
+        text-align: center;
+        align-self: center;
+    }
+    
+    /*----------- FOOTER --------------*/
+    
+    
+    /*=====================================================================================================*/
+    /*======================================= Weather Gallery =============================================*/
+    /*=====================================================================================================*/
+    
+    /*----------- BODY --------------*/
+    
+    
+    /*----------- HEADER --------------*/
+    
+    
+    /*----------- NAVIGATION --------------*/
+    
+    
+    /*----------- MAIN --------------*/
+    main .gallery_grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    
+    
+    /*----------- FOOTER --------------*/
+
+
+
+
+    /*=====================================================================================================*/
+    /*========================================= Storm Center ==============================================*/
+    /*=====================================================================================================*/
+
+    /*----------- BODY --------------*/
+
+
+    /*----------- HEADER --------------*/
+
+
+    /*----------- NAVIGATION --------------*/
+
+
+    /*----------- MAIN --------------*/
+
+
+
+    /*----------- FORM --------------*/
+    form legend {
+        text-align: left;
+        margin: 0 1rem;
+        font-size: 1.3rem;
+    }
+    form input.submitBtn {
+        display: inline;
+        margin: 2rem 0 0 2%;
+    }
+    form label.top input, form label.top select {
+        max-width: 25rem;
+        font-size: 1rem;
+    }
+    form label.top, form div {
+        font-size: 1rem;
+    }
+    form #ratingvalue {
+        font-size: 1.3rem;
+    }
+    form label.sbs {
+        font-size: 1rem;
+    }
+
+
+
+    /*=====================================================================================================*/
+    /*===================================== Home Page Wireframes ==========================================*/
+    /*=====================================================================================================*/
+
+    .wireframes {
+        grid-template-columns: 1fr 1fr;
+    }
+    .wireframes img {
+        padding: 0;
+        border: none;
+    }
+
+
+
+    /*=====================================================================================================*/
+    /*========================================== Home Page ================================================*/
+    /*=====================================================================================================*/
+
+    main .townsDiv section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 1rem 0;
+    }
+    main .townsDiv section div {
+        align-self: center;
+    }
+    main .townsDiv section:nth-child(odd) img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    main .townsDiv section:nth-child(odd) div {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    main .townsDiv section img {
+        align-self: center;
+    }
+
+
+    } /* End of media query */
+    

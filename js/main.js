@@ -2,12 +2,24 @@
 // Place new Assignment name into "label" and assignment URL into "url"
 const listArray = [
     {
-        label: "Week 01",
-        url: "week-01",
+        label: "Weather Site Project",
+        url: "projects/weather-site-project",
     },
     {
-        label: "Week 02",
-        url: "week-02",
+        label: "Chamber of Commerce Project",
+        url: "projects/chamber-of-commerce",
+    },
+    {
+        label: "Pokemon Team Builder App",
+        url: "projects/pokemon-team-builder",
+    },
+    {
+        label: "To-do App",
+        url: "projects/to-do-app",
+    },
+    {
+        label: "Pokemon API",
+        url: "https://branden-cse341-pokemon.onrender.com/api-docs",
     },
 ];
 
@@ -17,7 +29,7 @@ listArray.forEach((listItem) => {
 
     let ol = document.getElementById("text-insert");
 
-    ol.innerHTML += `<li><a href=${url}>${label}</a></li>`;
+    ol.innerHTML += `<li><a href=${url} target=_blank>${label}</a></li>`;
 });
 
 // FOOTER - LAST MODIFIED DATE

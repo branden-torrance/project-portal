@@ -1,0 +1,28 @@
+/* =========================== FONT STYLES =========================== */
+@import url("https://fonts.cdnfonts.com/css/pokemon-solid");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+// ====== COLORS ======
+$primary-color: #666;
+$background-color-main: #fbfffe;
+$background-color-body: #cc0000;
+$pokemon-yellow: #ffcb05;
+$pokemon-lightblue: #3d7dca;
+$pokemon-darkblue: #003a70;
+
+// ====== FONTS ======
+$headlines-font: "Pokemon Solid", sans-serif;
+$body-font: "Roboto", sans-serif;
+
+//====== SIZES ======
+$header-text-small: 1.9rem;
+$header-text-large: 3rem;
+$section-title-small: 1.2rem;
+$section-title-large: 2rem;
+$paragraph-text-small: 0.9rem;
+$paragraph-text-large: 1rem;
+
+// ====== MEDIA QUERIES ======
+$break-point-medium: 500px;
+$break-point-large: 750px;
+$break-point-extra: 850px;

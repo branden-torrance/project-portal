@@ -1,0 +1,149 @@
+@use "variables" as *;
+@use "mixins";
+
+/* =========================== TEAM BUILDER PAGE =========================== */
+
+.team {
+    padding: 1.5rem 1.5rem 5rem 1.5rem;
+    &__title {
+        text-align: center;
+        padding: 2rem;
+    }
+    &__note {
+        text-align: center;
+    }
+    &__section {
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__text {
+            &__header {
+                display: flex;
+                justify-content: space-evenly;
+                &--title {
+                    margin-top: 3rem;
+                    font-size: 1.4rem;
+                    text-decoration: underline;
+                    text-align: center;
+                    margin-right: 0.5rem;
+                }
+                &--counter {
+                    font-size: 1.2rem;
+                    text-align: center;
+                    align-self: flex-end;
+                    margin-left: 0.5rem;
+                }
+            }
+            &--ol {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 0.5rem;
+                max-width: 400px;
+                margin-top: 2rem;
+                justify-items: center;
+                & li {
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    font-size: 1.3rem;
+                    margin: 0.75rem;
+                    width: 160px;
+                    border-bottom: 1px dotted black;
+                }
+                & li div button {
+                    font-size: 1.7rem;
+                    background-color: white;
+                    color: red;
+                    padding: 0;
+                    border: none;
+                }
+                & li div button:hover {
+                    cursor: pointer;
+                    color: darkred;
+                    text-shadow: 1px 1px 1px darkred;
+                }
+            }
+            &__form {
+                display: flex;
+                justify-content: center;
+                &--input {
+                    width: 150px;
+                    margin-top: 2rem;
+                    padding: 0.65rem;
+                    font-size: 1rem;
+                }
+                &--div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                &--button {
+                    border-radius: 10px;
+                    background-color: $pokemon-darkblue;
+                    color: $pokemon-yellow;
+                    margin-top: 1.95rem;
+                    font-size: 1rem;
+                    width: 75px;
+                    height: 43px;
+                    padding: 0.65rem;
+                }
+                &--list {
+                    & ul {
+                        border: 1px solid black;
+                        height: 150px;
+                        width: 171px;
+                        overflow: hidden;
+                        overflow-y: scroll;
+                        & li:hover {
+                            background-color: lightgray;
+                        }
+                    }
+                }
+            }
+        }
+        &__figure {
+            display: flex;
+            max-width: 400px;
+            margin-top: 3rem;
+            &--img {
+                align-self: center;
+                width: 100%;
+            }
+        }
+    }
+}
+
+// ============================ Large Breakpoint ============================
+@include mixins.breakpoint(large) {
+    .team {
+        padding: 2rem 2rem 5rem 2rem;
+        &__section {
+            flex-direction: row;
+            justify-content: space-evenly;
+            &__figure {
+                &--img {
+                    align-self: flex-start;
+                }
+            }
+            &__text {
+                &--ol {
+                    grid-template-columns: 1fr 1fr;
+                    justify-items: unset;
+                }
+                &__form {
+                    &--input {
+                        width: 250px;
+                    }
+                    &--list {
+                        & ul {
+                            width: 273px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

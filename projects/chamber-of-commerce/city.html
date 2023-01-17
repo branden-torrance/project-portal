@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Battle Creek Chamber of Commerce - City Page">
+    <meta name="author" content="Branden Torrance">
+    <title>Historical and Demographic Information about Battle Creek | Battle Creek Chamber of Commerce</title>
+
+<!--STYLESHEETS-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+<!--ICONS-->
+    <script defer src="https://kit.fontawesome.com/15b4785cfb.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+
+    <!--HEADER-->
+        <div id="headerWrapper">
+            <header class="clearfix">
+                    <img src="images/chamber_logo.png" alt="Website logo">
+                <div class="headings">
+                    <h1>Battle Creek</h1>
+                    <h2>Chamber of Commerce</h2>
+                </div>
+            </header>
+        </div>  
+    
+    <!--NAVIGATION-->    
+        <div id="navWrapper">
+            <nav class="clearfix">
+                <div class="buttonText">
+                    <button onclick="toggleMenu()">&#9776;</button>
+                </div>
+                <ul id="primaryNav" class="hide">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="#">City</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+    <!--CONTENT-->
+        <main>
+            <h1 id="pageName">City</h1>
+
+            <h2>City Events</h2>
+            <div id="cityEvents">
+                <ul id="events">
+                    <li>Battle Creek Farmers Market 2021<br>
+                        July 28, 2021, 9:00 AM - 1:00 PM @ Festival Market Square
+                    </li>
+                    <li>FOOD TRUCK FRIDAYS<br>
+                        July 30, 2021, 5:00 PM - 8:00 PM @ Festival Market Square
+                    </li>
+                    <li>VIBE @ 5<br>
+                        July 30, 2021, 5:00 PM - 7:30 PM @ FRIENDSHIP PARK
+                    </li>
+                    <li>Festival of the Dogs<br>
+                        August 21, 2021, 10:00 AM - 1:00 PM @ Home Run Dog Park
+                    </li>
+                </ul>
+                <img src="images/farmersmarket.jpg" alt="Battle Creek Farmers Market" loading="lazy">
+            </div>
+
+            <h2>Demographics for 2018</h2>
+            <div id="demographics">
+                <img src="images/graph.jpg" alt="Demographic graph" loading="lazy">
+                <p id="cityDemographics"><strong>Statistics</strong><br>
+                    Population: 51,475<br>
+                    Median Age: 36.5<br>
+                    Number of Employees: 21,686<br>
+                    Median Household Income: $41,106<br>
+                    Median Property Value: $83,900<br>
+                    Poverty Rate: 22.3%<br>
+                    <br>
+                    <strong>Race & Ethnicity</strong><br>
+                    White (Non-Hispanic)<br>
+                    33,700 - (65.4%)<br>
+                    <br>
+                    Black or African American (Non-Hispanic)<br>
+                    9,380 - (18.2%)<br>
+                    <br>
+                    White (Hispanic)<br>
+                    2,640 - (5.13%)
+                </p>
+            </div>
+
+            <h2>Battle Creek - The Cereal City</h2>
+            <div id="history">
+                <img src="images/oldbuilding2.jpg" alt="Downtown Battle Creek Building" loading="lazy">
+                <p id="cityHistory">
+                    Battle Creek acquired its name from a skirmish that took place between a government land surveyor and two Native Americans. 
+                    This small skirmish happened more than 175 years ago. Battle Creek has been known by a few different monikers, such as Health 
+                    City, International City, and Queen City. Today, however, Battle Creek is known as Cereal City, due to the fact Battle Creek 
+                    is the birthplace of the cereal industry.<br>
+                    <br>
+                    Battle Creek has made its way into the homes of almost every American, by way of the breakfast table. This is the place where 
+                    C. W. Post and W. K. Kellogg started their businesses, which are some of the largest producers of Cereal in America today. 
+                    Around 1894, C.W. Post developed his first well known cereal “Grape-Nuts”. Not long after that, in 1906, W. K. Kellogg decided 
+                    to get into the breakfast cereal business and grew to be a major contender with Post.<br>
+                    <br>
+                    Battle Creek is also served as a training location for the US Army troops during World War I and World War II, at "Camp Custer", 
+                    which was later renamed "Fort Custer". In World War II, Fort Custer also served as an internment center for German Prisoners of War.
+                    An Army hospital was established in Battle Creek, named "Percy Jones Army Hospital", and acted as a rehabilition center for wounded 
+                    soldiers during and after the war. By the end of the war, it was the largest medical installation operated by the Army. To accommodate
+                    the wounded soldiers, Battle Creek became the first city in America to install wheelchair ramps in its sidewalks.
+                </p>
+            </div>
+        </main>
+    
+    <!--FOOTER-->
+        <div id="footerWrapper">
+            <footer>
+                &copy; <span id="year"></span> Branden Torrance
+                <div id="dateUpdated">Last Updated: <span id="currentDate"></span></div>
+            </footer>
+        </div>
+    
+    <!--SCRIPTS-->
+        <!--FONT-->
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>WebFont.load({google: {families: ["Cinzel", "Open+Sans"]}});</script>
+        
+        <script src="js/script.js"></script>
+
+    </body>
+    </html>

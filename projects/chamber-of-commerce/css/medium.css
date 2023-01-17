@@ -1,0 +1,377 @@
+/*===============================================================================================*/
+/*======================================= ALL PAGES =============================================*/
+/*===============================================================================================*/
+
+/* 46.25rem = 740px @ 16px base */
+@media only screen and (min-width: 46.25rem) {
+
+
+    /*----------- BODY --------------*/
+
+
+    /*----------- HEADER --------------*/
+    header img {
+        width: 160px;
+    }
+    header h1 {
+        font-size: 2.5rem;
+        letter-spacing: 5px;
+    }
+    header h2 {
+        font-size: 1.3rem;
+        letter-spacing: 3px;
+        margin-top: .8rem;
+    }
+
+
+    /*----------- NAVIGATION --------------*/
+    .buttonText {
+        display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    nav ul {
+        border-bottom: none;
+    }
+    nav ul.hide {
+        display: block;
+    }
+    nav ul li {
+        float: left;
+        padding: 1rem;
+        width: auto;
+    }
+    nav ul li a {
+        border: none;
+        width: 7rem;
+        border: 1px solid #095256;
+        border-radius: .5rem;
+        padding: .7rem 1rem;
+        background-color: #fff;
+        color: #095256;
+        box-shadow: 2px 2px 3px black;
+    }
+    nav ul li.active a {
+        border-bottom: none;
+    }
+    nav ul li a:hover {
+        transition: .4s;
+    }
+    /*----------- MAIN --------------*/
+
+
+    /*----------- FOOTER --------------*/
+    footer {
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+
+    
+/*========================================================================================*/
+/*======================================= HOME ===========================================*/
+/*========================================================================================*/
+    
+    /*----------- BODY --------------*/
+
+
+    /*----------- HEADER --------------*/
+
+
+    /*----------- NAVIGATION --------------*/
+
+
+    /*----------- MAIN --------------*/
+    main .hero_parent {
+        position: relative;
+    }
+    main .hero_child {
+        left: unset;
+        bottom: 35%;
+        right: 3%;
+        font-size: 1.4rem;
+        width: 275px;
+    }
+    main div#ourPurposeDiv img {
+        float: right;
+        width: 40%;
+        min-width: 350px;
+        padding: 0 1rem 1rem 1rem;
+    }
+    main div#ourPurposeDiv p {
+        margin: 0;
+        padding-left: 1.5%;
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+    main #cityInformationDiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 275px 275px;
+    }
+    main #cityInformationDiv p {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+    main #cityInformationDiv li {
+        font-size: 1rem;
+    }
+    main div#cityInformationDiv h3 {
+        font-size: 1.5rem;
+    }
+    main div section#companyHighlights {
+        grid-column: span 2;
+        grid-row: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+    main div section#companyHighlights h3 {
+        grid-row: 1;
+        grid-column: span 3;
+        margin: 1rem 0 -1rem 0;
+    }
+    main div section#companyHighlights img {
+        width: 70%;
+        grid-row: 2;
+    }
+    main div section#companyHighlights p {
+        grid-row: 3;
+        border-bottom: none;
+    }
+    main div section#upcomingEvents {
+        grid-column: 1;
+        grid-row: 2;
+        margin: 0;
+        color: white;
+        background-color: #087F8C;
+        border-bottom-right-radius: 3rem;
+        border-top-left-radius: 3rem;
+        border-right: 3px solid white;
+    }
+    main div section#currentWeather {
+        margin: 0;
+        grid-column: 2;
+        grid-row: 2;
+        color: white;
+        background-color: #5AAA95;
+        border-bottom-left-radius: 3rem;
+        border-top-right-radius: 3rem;
+        border-left: 3px solid white;
+
+    }
+    main div section#weatherForecast {
+        margin: 0;
+        grid-column: 2;
+        grid-row: 3;
+        border-bottom: none;
+        color: white;
+        background-color: #86A873;
+        border-top-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+        border-top: 3px solid white;
+        border-left: 3px solid white;
+
+    }
+    main div section div#forecastDiv {
+        margin-top: 3rem;
+        padding-bottom: 0;
+    }
+    main div section div#forecastDiv h4 {
+        font-size: 1rem;
+    }
+    main div section#homeContact {
+        margin: 0;
+        grid-column: 1;
+        grid-row: 3;
+        text-align: center;
+        color: white;
+        background-color: #BB9F06;
+        border-top-right-radius: 3rem;
+        border-bottom-left-radius: 3rem;
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+    }
+
+    /*----------- FOOTER --------------*/
+
+
+
+/*========================================================================================*/
+/*======================================= CITY ===========================================*/
+/*========================================================================================*/
+    
+    /*----------- BODY --------------*/
+
+
+    /*----------- HEADER --------------*/
+
+
+    /*----------- NAVIGATION --------------*/
+
+
+    /*----------- MAIN --------------*/
+    main div#cityEvents {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+        align-items: center;    
+    }
+    main div#cityEvents img {
+        margin-bottom: 0;
+    }
+    main div ul#events {
+        margin: 0;
+    }
+    main div#demographics {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        text-align: left;
+        align-items: center;
+    }
+    main div#history img {
+        float: right;
+        width: 50%;
+        min-width: 350px;
+        padding: 0 1rem 1rem 1rem;
+    }
+  
+
+    /*----------- FOOTER --------------*/
+
+
+
+/*========================================================================================*/
+/*======================================= JOIN ===========================================*/
+/*========================================================================================*/
+    
+    /*----------- BODY --------------*/
+
+
+    /*----------- HEADER --------------*/
+
+
+    /*----------- NAVIGATION --------------*/
+
+
+    /*----------- MAIN --------------*/
+    main img#scrollImage {
+        display: block;
+        width: 200px;
+        position: sticky;
+        float: right;
+        margin-right: 10%;
+        top: 70%;
+    }
+    form.joinForm fieldset {
+        margin: 2rem;
+        width: 60%
+    }
+    form.joinForm legend {
+        text-align: left;
+        margin: 0 1rem;
+        font-size: 1.3rem;
+    }
+    form.joinForm input.submitBtn {
+        display: inline;
+        margin: 3rem 0 0 3%;
+    }
+    form.joinForm label.top input, form label.top select {
+        max-width: 30rem;
+        font-size: 1rem;
+    }
+    form.joinForm label.top, form div {
+        font-size: 1rem;
+    }
+    form.joinForm label.sbs {
+        font-size: 1rem;
+    }
+    form.joinForm label.top input:required {
+        border-right: #AD343E solid 30px;
+    }
+    form.joinForm label.top input:required:valid {
+        border-right: green solid 30px;
+    }
+    form.joinForm label.top select:required {
+        border-right: #AD343E solid 30px;
+    }
+    form.joinForm label.top select:required:valid {
+        border-right: green solid 30px;
+    }
+  
+
+    /*----------- FOOTER --------------*/
+
+
+
+/*========================================================================================*/
+/*===================================== DIRECTORY ========================================*/
+/*========================================================================================*/
+    
+    /*----------- BODY --------------*/
+
+
+    /*----------- HEADER --------------*/
+
+
+    /*----------- NAVIGATION --------------*/
+
+
+    /*----------- MAIN --------------*/
+    main div#viewButtons {
+        margin-right: 1rem;
+        text-align: right;
+    }
+    main div.gridView {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*----------- FOOTER --------------*/
+
+
+
+/*========================================================================================*/
+/*====================================== CONTACT =========================================*/
+/*========================================================================================*/
+    
+    /*----------- BODY --------------*/
+
+
+    /*----------- HEADER --------------*/
+
+
+    /*----------- NAVIGATION --------------*/
+
+
+    /*----------- MAIN --------------*/
+  
+    main div#contactGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+    }
+    form.contactForm fieldset {
+        width: 80%;
+    }
+    main div#contactGrid iframe {
+        width: 70%;
+        grid-column: span 2;
+    }
+    form.contactForm label.contactTop, form div {
+        font-size: 1rem;
+    }
+    form.contactForm label.contactTop input, form label.contactTop select {
+        font-size: 1rem;
+    }main div section#contactAddress {
+        font-size: 1rem;
+    }
+
+    /*----------- FOOTER --------------*/
+
+
+
+} /* End of media query */
+    

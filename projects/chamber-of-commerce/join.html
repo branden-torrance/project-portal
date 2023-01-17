@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Battle Creek Chamber of Commerce - Join Page">
+    <meta name="author" content="Branden Torrance">
+    <title>Join the Chamber of Commerce | Battle Creek Chamber of Commerce</title>
+
+<!--STYLESHEETS-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+<!--ICONS-->
+    <script defer src="https://kit.fontawesome.com/15b4785cfb.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+
+    <!--HEADER-->
+        <div id="headerWrapper">
+            <header class="clearfix">
+                    <img src="images/chamber_logo.png" alt="Website logo">
+                <div class="headings">
+                    <h1>Battle Creek</h1>
+                    <h2>Chamber of Commerce</h2>
+                </div>
+            </header>
+        </div>  
+    
+    <!--NAVIGATION-->    
+        <div id="navWrapper">
+            <nav class="clearfix">
+                <div class="buttonText">
+                    <button onclick="toggleMenu()">&#9776;</button>
+                </div>
+                <ul id="primaryNav" class="hide">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="city.html">City</a></li>
+                    <li class="active"><a href="#">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    
+    <!--CONTENT-->
+        <main>
+            <h1 id="pageName">Join</h1>
+
+            <img id="joinImage" src="images/jointhechamber.jpg" alt="Join the Chamber" loading="lazy">
+            <h2>Join the Chamber</h2>
+            <img id="scrollImage" src="images/chamber_logo.png" alt="Scrolling Chamber Logo">
+            <form method="get" action="thanks.html" class="joinForm">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label class="top">First Name* <input type="text" name="firstname" pattern="[A-Za-z]{1,}" required></label>
+                    <label class="top">Last Name* <input type="text" name="lastname" pattern="[A-Za-z]{1,}" required></label>
+                    <label class="top">Title <input type="text" name="title" pattern="[A-Za-z ]"></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
+                    <label class="top">Cell Phone <input type="tel" name="phone" pattern="[0-9]{10,}" placeholder="1234567890"></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label class="top">Business Name* <input type="text" name="businessname" required></label>
+                    <label class="top">Business Address <input type="text" name="businessaddress"></label>
+                    <label class="top">Business Website <input type="text" name="businesswebsite"></label>
+                    <label class="top">Business Description <input type="text" name="businesswebsite"></label>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Membership</legend>
+                    
+                        <label class="top">Membership Level* 
+                            <select name="subject" required>
+                                <option value="" disabled selected>Please Select</option>
+                                <option value="nonprofit">Non-profit - $100</option>
+                                <option value="bronze">Bronze - $200</option>
+                                <option value="silver">Silver - $400</option>
+                                <option value="gold">Gold - $1000</option>
+                            </select>
+                        </label>
+                        <br>
+                        <section class="membershipLevelDescription">
+                            <h3>Non-Profit Level</h3>
+                            <ul>
+                                <li>Certificate of Origin Discount</li>
+                                <li>Access to Subject Matter Experts</li>
+                                <li>Select Complimentary Event Registration</li>
+                            </ul>
+                            <h3>Bronze Level</h3>
+                            <ul>
+                                <li>Certificate of Origin Discount</li>
+                                <li>Access to Subject Matter Experts</li>
+                                <li>Select Complimentary Event Registration</li>
+                                <li>Event Discounts</li>
+                            </ul>
+                            <h3>Silver Level</h3>
+                            <ul>
+                                <li>Certificate of Origin Discount</li>
+                                <li>Access to Subject Matter Experts</li>
+                                <li>Select Complimentary Event Registration</li>
+                                <li>Event Discounts</li>
+                                <li>Unlimited Space Rentals of the Steelcase Conference Center</li>
+                            </ul>
+                            <h3>Gold Level</h3>
+                            <ul>
+                                <li>Certificate of Origin Discount</li>
+                                <li>Access to Subject Matter Experts</li>
+                                <li>Select Complimentary Event Registration</li>
+                                <li>Event Discounts</li>
+                                <li>Unlimited Space Rentals of the Steelcase Conference Center</li>
+                                <li>$500 Advertising Credit</li>
+                                <li>Eligible for Nomination the Board of Directors</li>
+                            </ul>
+                        </section>
+                    <input type="submit" value="Join Now" class="submitBtn">
+                </fieldset>    
+            </form>
+
+
+
+        </main>
+    
+    <!--FOOTER-->
+        <div id="footerWrapper">
+            <footer>
+                &copy; <span id="year"></span> Branden Torrance
+                <div id="dateUpdated">Last Updated: <span id="currentDate"></span></div>
+            </footer>
+        </div>
+    
+    <!--SCRIPTS-->
+        <!--FONT-->
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>WebFont.load({google: {families: ["Cinzel", "Open+Sans"]}});</script>
+        
+        <script src="js/script.js"></script>
+
+    </body>
+    </html>

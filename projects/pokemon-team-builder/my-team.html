@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="modules/global-scripts.js" defer></script>
+        <script src="modules/my-team.js" defer></script>
+        <link rel="stylesheet" href="styles.css" />
+        <title>My Team | Pokemon Team Builder</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__title">Pokemon Team Builder</h1>
+            <nav class="header__nav">
+                <div class="header__nav__menu">
+                    <button
+                        class="header__nav__menu--button"
+                        onclick="toggleMenu()"
+                    >
+                        &#9776;
+                    </button>
+                </div>
+                <ul class="header__nav__list">
+                    <li class="header__nav__list--item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="header__nav__list--item active">
+                        <a href="#">My Team</a>
+                    </li>
+                    <li class="header__nav__list--item">
+                        <a href="pokemon-search.html">Pokedex</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="team">
+            <h2 class="team__title">My Team</h2>
+            <p class="team__note">
+                In order to become a pokemon master, you need a champion
+                team! Build your perfect team here to conquer the
+                pokemon world out there. <br /><br />*Note: You may add
+                up to 6 pokemon on your team.
+            </p>
+            <section class="team__section">
+                <div class="team__section__text">
+                    <div class="team__section__text__header">
+                        <h3 class="team__section__text__header--title">Team Members</h3>
+                        <div class="team__section__text__header--counter"></div>
+                    </div>
+                    <ol class="team__section__text--ol"></ol>
+                    <form class="team__section__text__form">
+                        <div class="team__section__text__form--div">
+                            <input
+                                class="team__section__text__form--input"
+                                name="addPokemon"
+                                type="text"
+                                placeholder="Pokemon name here"
+                                onkeyup="filterList()"
+                                onblur="closeList()"
+                                required
+                            />
+                            <div class="team__section__text__form--list" id="pokemon-list">
+                                <ul class="team__selection__text--list--ul">
+                                </ul>
+                            </div>
+                        </div>
+                        <input class="team__section__text__form--button" type="submit" value="Add">
+                        </input>
+                    </form>
+                </div>
+                <figure class="team__section__figure">
+                    <img
+                        class="team__section__figure--img"
+                        src="images/ash-and-team.png"
+                        alt="Ash Ketchum and his Pokemon Team"
+                    />
+                </figure>
+            </section>
+        </main>
+
+        <footer class="footer">© Branden Torrance | WDD 330 | Fall 2022</footer>
+    </body>
+</html>

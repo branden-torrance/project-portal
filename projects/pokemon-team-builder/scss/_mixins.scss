@@ -1,0 +1,24 @@
+// Place variables in the global namespace
+@use "variables" as *;
+
+// Media Queries
+@mixin breakpoint($break) {
+    // Medium
+    @if $break == medium {
+        @media only screen and (min-width: $break-point-medium) {
+            @content;
+        }
+    }
+    // Large
+    @if $break == large {
+        @media only screen and (min-width: $break-point-large) {
+            @content;
+        }
+    }
+    // Extra sizing
+    @if $break == extra {
+        @media only screen and (min-width: $break-point-extra) {
+            @content;
+        }
+    }
+}

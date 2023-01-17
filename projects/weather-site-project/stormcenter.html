@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lesson W06 - Preston Town Page">
+    <meta name="author" content="Branden Torrance">
+    <title>Report a Storm in Your Area | Weathering Weather</title>
+
+<!--STYLESHEETS-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+
+<!--HEADER-->
+    <div id="bannerMessage" class="">Preston Pancakes in the Park!<br>9:00 a.m. Saturday at the city park pavilion.
+    </div>
+    <div id="headerWrapper">
+        <header class="clearfix">
+            <picture>
+                <img src="images/weather_logo.png" alt="Website logo">
+            </picture>
+            <div class="headings">
+                <h1>Weathering Weather</h1>
+                <h2>Weathering the weather, whether the weather needs weathering or not!</h2>
+            </div>
+        </header>
+    </div>  
+
+<!--NAVIGATION-->    
+    <div id="navWrapper">
+        <nav class="clearfix">
+            <div class="buttonText">
+                <button onclick="toggleMenu()">&#9776;</button>
+                <h3>Menu</h3>
+            </div>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>
+                <li class="active"><a href="#">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+<!--CONTENT-->
+    <main>
+        <h1 id="pageName">Storm Center</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label class="top">Full Name* <input type="text" name="fullname" pattern="[A-Za-z ]{5,}" required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="example@gmail.com"></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="5551234567" required></label>
+                <label class="top">Zip Code* <input type="number" name="zip" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="top">Date of Storm <input type="date" name="date"></label>
+                <label class="top">Storm Type <input list="stormtype" name="stormtype" placeholder="Please Select">
+                    <datalist id="stormtype">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </label>
+                <br>
+                <br>
+                <div>Storm Severity</div>
+                <label class="sbs" for="rating">
+                    <input type="range" id="rating" value="1" min="1" max="10" step="1" list="tickmarks" 
+                    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span id="ratingvalue">1</span>
+                </label>
+                    <datalist id="tickmarks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+                
+                <label class="top">Storm Region 
+                    <select name="subject">
+                        <option value="" disabled selected>Please Select &#9662;</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodasprings">Soda Springs</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select>
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Additional Information</legend>
+                <br>
+                <div>Are you in danger?</div>
+                <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+
+                <label>
+                    <div class="commentsDiv">Comments</div>
+                    <textarea id="comments" name="comments" rows="7" cols="25" placeholder="Enter text here:"></textarea>
+                </label>
+                <br>
+                <br>
+                <input type="submit" value="Report Storm" class="submitBtn">
+            </fieldset>
+
+        </form>
+    </main>
+
+<!--FOOTER-->
+    <div id="footerWrapper">
+        <footer>
+            <p>
+                &copy; Branden Torrance | <a href="https://spacescapist.github.io">Assignment Portal</a>
+            </p>
+            <p>Today: <span class="date"></span></p>
+            <p>Last Visited: <span id="lastVisit"></span></p>
+        </footer>
+    </div>
+
+<!--SCRIPTS-->
+    <!--FONT-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>WebFont.load({google: {families: ["Josefin+Sans", "Open+Sans"]}});</script>
+    <!--DATE & LAZY LOAD-->
+    <script src="js/script.js"></script>
+</body>
+</html>

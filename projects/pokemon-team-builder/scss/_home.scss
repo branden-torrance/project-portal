@@ -1,0 +1,172 @@
+@use "variables" as *;
+@use "mixins";
+
+/* =========================== HOME PAGE =========================== */
+.home {
+    &__section-one {
+        padding: 3rem 1rem 1rem 1rem;
+
+        &__figure {
+            float: left;
+            padding: 1rem;
+            &--img {
+                max-width: 120px;
+            }
+        }
+        &__text {
+            &--title {
+                font-size: $section-title-small;
+            }
+            &--paragraph {
+                font-size: $paragraph-text-small;
+            }
+        }
+    }
+
+    &__section-two {
+        padding: 2rem 1rem 1rem 1rem;
+
+        &__figure {
+            float: right;
+            padding: 1rem;
+            &--img {
+                max-width: 120px;
+            }
+        }
+        &__text {
+            &--title {
+                font-size: $section-title-small;
+            }
+            &--paragraph {
+                font-size: $paragraph-text-small;
+            }
+        }
+    }
+
+    &__div-animation {
+        display: block;
+        margin-top: 10rem;
+        padding-bottom: 6rem;
+        position: relative;
+        &--person {
+            height: 200px;
+            margin-left: 15%;
+            animation: blur-person 4s linear infinite;
+        }
+        &--pokeball {
+            position: absolute;
+            width: 40px;
+            animation: pokeball-throw-small 4s linear infinite;
+        }
+    }
+
+    // ============================ Large Breakpoint ============================
+    @include mixins.breakpoint(large) {
+        &__section-one {
+            padding-top: 2rem;
+            padding-bottom: 0rem;
+            // margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            &__figure {
+                padding: 0 2rem;
+                width: 40%;
+                text-align: center;
+                &--img {
+                    max-height: 400px;
+                    max-width: 100%;
+                }
+            }
+            &__text {
+                padding: 2rem;
+                width: 60%;
+                &--title {
+                    font-size: $section-title-large;
+                }
+                &--paragraph {
+                    font-size: $paragraph-text-large;
+                }
+            }
+        }
+        &__section-two {
+            padding-top: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            &__figure {
+                padding: 0 2rem;
+                text-align: center;
+                width: 40%;
+                &--img {
+                    max-height: 400px;
+                    max-width: 100%;
+                }
+            }
+            &__text {
+                padding: 2rem;
+                width: 60%;
+                &--title {
+                    font-size: $section-title-large;
+                }
+                &--paragraph {
+                    font-size: $paragraph-text-large;
+                }
+            }
+        }
+        &__div-animation {
+            display: block;
+            margin-top: 12rem;
+            padding-bottom: 6rem;
+            position: relative;
+            &--person {
+                height: 200px;
+                margin-left: 30%;
+                animation: blur-person 4s linear infinite;
+            }
+            &--pokeball {
+                position: absolute;
+                width: 40px;
+                animation: pokeball-throw-large 4s linear infinite;
+            }
+        }
+    }
+}
+
+// Pokeball Animation small view
+@keyframes pokeball-throw-small {
+    50% {
+        transform: rotate(360deg) translate(50px, 100px) rotate(540deg)
+            scale(2.5);
+    }
+    90% {
+        transform: rotate(720deg) translate(50px, 100px) rotate(1080deg)
+            scale(5);
+    }
+    100% {
+        transform: rotate(720deg) translate(50px, 100px) rotate(1080deg)
+            scale(5);
+    }
+}
+
+// Pokeball Animation large view
+@keyframes pokeball-throw-large {
+    50% {
+        transform: rotate(360deg) translate(100px, 100px) rotate(540deg)
+            scale(4);
+    }
+    90% {
+        transform: rotate(720deg) translate(100px, 100px) rotate(1080deg)
+            scale(8);
+    }
+    100% {
+        transform: rotate(720deg) translate(100px, 100px) rotate(1080deg)
+            scale(8);
+    }
+}
+
+// Blur person throwing pokeball
+@keyframes blur-person {
+    100% {
+        filter: blur(4px);
+    }
+}
